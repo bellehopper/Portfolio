@@ -30,7 +30,7 @@
    
     <body>
         
-        <h1 id= "demo" onmouseover= "mouseOver()" onmouseout= "mouseOut()" >Isabelle</h1>
+        <h1  >Isabelle</h1>
         
         <script>
             function mouseOver(){
@@ -42,13 +42,23 @@
             }
         </script>
         
-        
+        <hr>
 
         <p>Hello World.</p>
 
-        <p title= "HTML is stressing me out">
+        <p title= "HTML is stressing me out" id= "demo" onmouseover= "mouseOver()" onmouseout= "mouseOut()" >
         I'm learning how to code this summer.
         </p>
+        
+        <script>
+            function mouseOver(){
+                document.body.style.backgroundImage = "url('https://media.giphy.com/media/A06UFEx8jxEwU/giphy.gif')";
+            }
+            
+            function mouseOut(){
+                document.body.style.backgroundImage = "url('http://www.animateit.net/data/media/june2010/d6e5e40d22d3.gif')";
+            }
+        </script>
         
         <hr>
         
