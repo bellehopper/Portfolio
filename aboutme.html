@@ -28,9 +28,19 @@
     
 </style>
    
-    <body background="http://www.animateit.net/data/media/june2010/d6e5e40d22d3.gif">
+    <body /* background="http://www.animateit.net/data/media/june2010/d6e5e40d22d3.gif" */ >
         
-        <h1>Isabelle</h1>
+        <h1 id= "demo" onmouseover= "mouseOver()" onmouseout= "mouseOut()" >Isabelle</h1>
+        
+        <script>
+            function mouseOver(){
+                document.body.style.backgroundImage = "https://media.giphy.com/media/A06UFEx8jxEwU/giphy.gif"
+            }
+            
+            function mouseOut(){
+                document.body.style.backgroundImage = "http://www.animateit.net/data/media/june2010/d6e5e40d22d3.gif"
+            }
+        </script>
         
         <hr>
 
